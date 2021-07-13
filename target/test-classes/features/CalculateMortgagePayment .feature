@@ -35,10 +35,18 @@ Feature: Calculate Mortgage Payment
 
 
     Examples:
-      | MortgageAmountCurrency | MortgageAmount | AmortizationPeriodYears | AmortizationPeriodMonths | InterestTermYears | InterestTermMonths | InterestType | InterestRate | StartDateMonth | StartDateYear | PaymentPeriod | ExpectedMonthlyPayment | ExpectedTotalPayments | ExpectedTotalInterest |
-      | dollar                 | 500000         | 35                      | 12                       | 40                | 12                 | Fixed        | 1.7          | 3              | 2022          | Monthly       | $1,548.27              | $668,852.68           | $168,852.68           |
-      | euro                   | 600000         | 40                      | 11                       | 36                | 11                 | Variable     | 2.6          | 5              | 2023          | Semi-Monthly  | €1,981.55              | €973,021.78           | €373,021.78           |
-      | pound                  | 800000         | 28                      | 9                        | 48                | 8                  | Fixed        | 3.8          | 8              | 2022          | Bi-Weekly     | £3,815.01              | £1,316,178.66         | £516,178.66           |
-      | dollar                 | 850000         | 30                      | 5                        | 60                | 3                  | Variable     | 4            | 10             | 2024          | Weekly        | $4,012.89              | $1,464,864.41         | $614,864.41           |
-      | dollar                 | 950000         | 22                      | 8                        | 30                | 9                  | Fixed        | 6.4          | 2              | 2025          | Acc-Weekly    | $6,625.43              | $1,802,380.77         | $852,380.77           |
+      | MortgageAmountCurrency | MortgageAmount | AmortizationPeriodYears | AmortizationPeriodMonths | InterestTermYears | InterestTermMonths | InterestType |
+      | dollar                 | 500000         | 35                      | 12                       | 40                | 12                 | Fixed        |
+      | euro                   | 600000         | 40                      | 11                       | 36                | 11                 | Variable     |
+      | pound                  | 800000         | 28                      | 9                        | 48                | 8                  | Fixed        |
+      | dollar                 | 850000         | 30                      | 5                        | 60                | 3                  | Variable     |
+      | dollar                 | 950000         | 22                      | 8                        | 30                | 9                  | Fixed        |
 
+    Examples:
+      | InterestRate | StartDateMonth | StartDateYear | PaymentPeriod | ExpectedMonthlyPayment | ExpectedTotalPayments | ExpectedTotalInterest |
+      | 1.7          | 3              | 2022          | Monthly       | $1,548.27              | $668,852.68           | $168,852.68           |
+      | 2.6          | 5              | 2023          | Semi-Monthly  | €1,981.55              | €973,021.78           | €373,021.78           |
+      | 3.8          | 8              | 2022          | Bi-Weekly     | £3,815.01              | £1,316,178.66         | £516,178.66           |
+      | 4            | 10             | 2024          | Weekly        | $4,012.89              | $1,464,864.41         | $614,864.41           |
+      | 6.4          | 2              | 2025          | Acc-Weekly    | $6,625.43              | $1,802,380.77         | $852,380.77           |
+    

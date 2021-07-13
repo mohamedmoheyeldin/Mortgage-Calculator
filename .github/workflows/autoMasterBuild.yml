@@ -2,9 +2,9 @@ name: Master Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ CI/CD-Run ]
   pull_request:
-    branches: [ master ]
+    branches: [ CI/CD-Run ]
 
 jobs:
   build:

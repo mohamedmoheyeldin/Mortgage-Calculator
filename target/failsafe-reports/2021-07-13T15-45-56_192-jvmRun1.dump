@@ -1,0 +1,124 @@
+# Created at 2021-07-13T15:46:33.993
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (1892@MoeWorkStation):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@11.0.10/java.net.SocketInputStream.socketRead0(Native Method)
+        at java.base@11.0.10/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+        at java.base@11.0.10/java.net.SocketInputStream.read(SocketInputStream.java:168)
+        at java.base@11.0.10/java.net.SocketInputStream.read(SocketInputStream.java:140)
+        at java.base@11.0.10/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+        at java.base@11.0.10/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+        at java.base@11.0.10/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+        at java.base@11.0.10/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1308)
+        at java.base@11.0.10/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:949)
+        at java.base@11.0.10/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+        at java.base@11.0.10/java.io.BufferedInputStream.read1(BufferedInputStream.java:292)
+        at java.base@11.0.10/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+        at java.base@11.0.10/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:746)
+        at java.base@11.0.10/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
+        at java.base@11.0.10/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1615)
+        at java.base@11.0.10/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+        at java.base@11.0.10/sun.net.www.protocol.http.HttpURLConnection.getHeaderFields(HttpURLConnection.java:3122)
+        at java.base@11.0.10/sun.net.www.protocol.https.HttpsURLConnectionImpl.getHeaderFields(HttpsURLConnectionImpl.java:279)
+        at app//io.cucumber.core.plugin.UrlOutputStream.getResponseBody(UrlOutputStream.java:110)
+        at app//io.cucumber.core.plugin.UrlOutputStream.sendRequest(UrlOutputStream.java:92)
+        at app//io.cucumber.core.plugin.UrlOutputStream.sendRequest(UrlOutputStream.java:86)
+        at app//io.cucumber.core.plugin.UrlOutputStream.close(UrlOutputStream.java:63)
+        at java.base@11.0.10/sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:341)
+        at java.base@11.0.10/sun.nio.cs.StreamEncoder.close(StreamEncoder.java:161)
+        at java.base@11.0.10/java.io.OutputStreamWriter.close(OutputStreamWriter.java:255)
+        at app//io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:33)
+        at app//io.cucumber.core.plugin.MessageFormatter$$Lambda$213/0x00000007c01bd440.receive(Unknown Source)
+        at app//io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+        at app//io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+        at app//io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:102)
+        at app//io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:74)
+        at app//io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:237)
+        at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+        at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+        at app//org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+        at app//org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+        at app//org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+        at app//org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@11.0.10/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@11.0.10/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+        at java.base@11.0.10/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@11.0.10/java.lang.Object.wait(Native Method)
+        at java.base@11.0.10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@11.0.10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@11.0.10/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@11.0.10/java.lang.Object.wait(Native Method)
+        at java.base@11.0.10/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@11.0.10/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+        at java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+        at java.base@11.0.10/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@11.0.10/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@11.0.10/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:649)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$400(ForkedBooter.java:82)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:340)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:423)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:435)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:388)
+        at java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+
+"UrlChecker-2" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@11.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@11.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+        at java.base@11.0.10/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+        at java.base@11.0.10/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+        at java.base@11.0.10/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+        at java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+        at java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+        at java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+        at java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+
+"OkHttp ConnectionPool" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@11.0.10/java.lang.Object.wait(Native Method)
+        at java.base@11.0.10/java.lang.Object.wait(Object.java:462)
+        at app//okhttp3.ConnectionPool$1.run(ConnectionPool.java:67)
+        at java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+        at java.base@11.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+        at java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+
+"Okio Watchdog" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@11.0.10/java.lang.Object.wait(Native Method)
+        at java.base@11.0.10/java.lang.Object.wait(Object.java:462)
+        at app//okio.AsyncTimeout.awaitTimeout(AsyncTimeout.java:361)
+        at app//okio.AsyncTimeout$Watchdog.run(AsyncTimeout.java:312)
+
+"Keep-Alive-Timer" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@11.0.10/java.lang.Thread.sleep(Native Method)
+        at java.base@11.0.10/sun.net.www.http.KeepAliveCache.run(KeepAliveCache.java:168)
+        at java.base@11.0.10/java.lang.Thread.run(Thread.java:834)
+        at java.base@11.0.10/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+
