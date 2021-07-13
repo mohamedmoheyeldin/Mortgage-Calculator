@@ -11,10 +11,10 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         publish = true,
         monochrome = true,
-        tags = "@CalculateMortgagePayment"
+        tags = "@CalMortgageSpecificData"
+        //@CalMortgageSpecificData
+        //@CalculateMortgage
         //@CalMortgagePaymentWithSetOfData
-        //@CalMortgagePayment
-        //@CalculateMortgagePayment
 )
 
 public class MainRunner {
