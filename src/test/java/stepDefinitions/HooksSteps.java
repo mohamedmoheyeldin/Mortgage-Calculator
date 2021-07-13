@@ -19,7 +19,7 @@ public class HooksSteps extends Driver {
     @Before
     public void setup() {
         myHooksPage.setUp();
-        driver.get(baseUrl);
+        driver.get("https://www.mortgagecalculator.net/");
         assertThat(driver.getCurrentUrl(), equalTo(baseUrl));
         assertThat(driver.getTitle(), equalTo(expectedTitle));
     }

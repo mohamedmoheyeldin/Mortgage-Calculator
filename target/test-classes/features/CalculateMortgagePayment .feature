@@ -1,10 +1,11 @@
 @CalculateMortgage
+@Regression
 Feature: Calculate Mortgage Payment
 
   Background:
     Given verify landing page display
 
-  @CalMortgagePayment
+  @CalMortgageSpecificData
   Scenario: Calculate mortgage payment with specific data
     Given user enter Mortgage Amount "dollar" and "800000"
     And user enter Amortization Period "35" and "12"
