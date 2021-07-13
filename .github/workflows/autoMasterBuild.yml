@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ CI/CD-Run ]
 
+env:
+  CUCUMBER_PUBLISH_TOKEN: '6c7da1c3-fc13-4175-9cd5-94263c8adef5'
+
 jobs:
   build:
 
@@ -20,3 +23,5 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn install
+
+
