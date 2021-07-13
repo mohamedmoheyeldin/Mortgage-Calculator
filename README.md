@@ -10,18 +10,6 @@ This project automation for Mortgage Calculator using
 * [Hamcrest](http://hamcrest.org/)
 
 
-
-
-<!-- Run test using mvn commands -->
-## Commands
-
-`mvn install -Dcucumber.options="–tags @Regression"`
-
-`mvn install -Dcucumber.options="–tags @CalMortgageSpecificData"`
-
-`mvn install -Dcucumber.options="–tags @CalMortgagePaymentWithSetOfData"`
-
-
 <!-- CONTACT -->
 ## Contact
 
