@@ -12,11 +12,8 @@ import org.junit.runner.RunWith;
         publish = true,
         monochrome = true,
         tags = "@Regression"
-        //@CalMortgageSpecificData
-        //@CalculateMortgage
-        //@CalMortgagePaymentWithSetOfData
 )
 
-public class MainRunner {
+public class RegressionRunner {
 
 }

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: library.MainRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.684 s - in library.MainRunner
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.634 s - in library.MainRunner

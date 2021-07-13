@@ -5,6 +5,7 @@ pages\landingPage.class
 library\Driver.class
 stepDefinitions\HooksSteps.class
 library\GSeleniumLibrary.class
+library\RegressionRunner.class
 library\DriverInitializer.class
 library\MainRunner.class
 stepDefinitions\landingSteps.class

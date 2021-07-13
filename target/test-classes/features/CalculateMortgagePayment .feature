@@ -1,4 +1,3 @@
-@CalculateMortgage
 @Regression
 Feature: Calculate Mortgage Payment
 

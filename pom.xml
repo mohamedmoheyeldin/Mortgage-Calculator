@@ -76,7 +76,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>MainRunner.java</include>
+                        <include>RegressionRunner.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
