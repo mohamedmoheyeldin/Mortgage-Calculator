@@ -15,9 +15,9 @@ This project automation for Mortgage Calculator using
 
 * [Mohamed Moheyeldin Website](https://mohamedmoheyeldin.com) 
 
-* [Mohamed Moheyeldin Work Email](mmohamed.moheyeldin@gmail.com)
+* [mmohamed.moheyeldin@gmail.com](mmohamed.moheyeldin@gmail.com)
 
-* [Mohamed Moheyeldin School Email](mmohamedm.moheyeldin@mbtech.com)
+* [mmohamedm.moheyeldin@mbtech.com](mmohamedm.moheyeldin@mbtech.com)
   
 * [Musabay technologies Website](https://www.musabaytechnologies.com)
 
