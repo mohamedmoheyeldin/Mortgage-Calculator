@@ -10,6 +10,23 @@ This project automation for Mortgage Calculator using
 * [Hamcrest](http://hamcrest.org/)
 
 
+
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=mohamedmoheyeldin_TeslaCypressAutomation)](https://sonarcloud.io/dashboard?id=mohamedmoheyeldin_TeslaCypressAutomation)
+
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=mohamedmoheyeldin&show_icons=true)
+
+### Most Used Languages
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=mohamedmoheyeldin&theme=blue-green)
+
+### Contributors Badge
+![Your Repository's Stats](https://contrib.rocks/image?repo=mohamedmoheyeldin/TeslaCypressAutomation)
+
+### Profile View Counter
+![Profile View Counter](https://komarev.com/ghpvc/?username=mohamedmoheyeldin)
+
+
+
+
 <!-- CONTACT -->
 ## Contact
 
@@ -22,4 +39,6 @@ This project automation for Mortgage Calculator using
 * [Musabay technologies Website](https://www.musabaytechnologies.com)
 
 * [Project Link](https://github.com/mohamedmoheyeldin/Mortgage-Calculator)
+
+
 
