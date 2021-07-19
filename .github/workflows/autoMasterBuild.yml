@@ -7,7 +7,7 @@ on:
     branches: [ CI/CD-Run ]
 
 env:
-  CUCUMBER_PUBLISH_TOKEN: '6c7da1c3-fc13-4175-9cd5-94263c8adef5'
+  CUCUMBER_PUBLISH_TOKEN: ${{ secrets.CUCUMBER_PUBLISH_TOKEN }}
 
 jobs:
   build:
