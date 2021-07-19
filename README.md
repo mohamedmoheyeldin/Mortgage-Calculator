@@ -7,8 +7,6 @@
 * [Maven](https://maven.apache.org/)
 * [WebDriver Manager](https://github.com/bonigarcia/webdrivermanager)
 * [Hamcrest](http://hamcrest.org/)
-
-
 * [Project Link](https://github.com/mohamedmoheyeldin/Mortgage-Calculator)
 
 <!-- SonarCloud Stats -->
