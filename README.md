@@ -15,6 +15,10 @@
 <!-- Build Stats -->
 ![example workflow](https://github.com/mohamedmoheyeldin/MortgageCalculatorCucumberMaven/actions/workflows/autoMasterBuild.yml/badge.svg)
 
+<!-- Daily Stats -->
+![example workflow](https://github.com/mohamedmoheyeldin/MortgageCalculatorCucumberMaven/actions/workflows/DailyBuild.yml/badge.svg)
+
+
 <!-- My Repository's Stats -->
 ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=mohamedmoheyeldin&show_icons=true)
 
@@ -32,7 +36,7 @@
 <!-- CONTACT -->
 ## Contact
 
-* [Mohamed Moheyeldin Website](https://mohamedmoheyeldin.com) 
+* [Mohamed Moheyeldin Website](https://mohamedmoheyeldin.com)
 
 * [mmohamed.moheyeldin@gmail.com](mmohamed.moheyeldin@gmail.com)
 
