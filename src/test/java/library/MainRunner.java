@@ -15,6 +15,7 @@ import org.junit.runner.RunWith;
         //@CalMortgageSpecificData
         //@CalculateMortgage
         //@CalMortgagePaymentWithSetOfData
+        //@CalMortgageData
 )
 
 public class MainRunner {
