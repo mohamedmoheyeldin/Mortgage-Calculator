@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 /***
  * @author Mohamed Moheyeldin: 07/2/2021
  */
@@ -21,8 +23,9 @@ public class GSeleniumLibrary extends Driver {
         driver = _driver;
     }
 
+
     public WebElement waitForElementVisibility(By by) {
-        WebElement element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(by));
+        WebElement element = (new WebDriverWait(driver, Duration.ofSeconds(10))).until(ExpectedConditions.visibilityOfElementLocated(by));
         return element;
     }
 
